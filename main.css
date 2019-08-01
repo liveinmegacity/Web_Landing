@@ -1,0 +1,66 @@
+body {
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #FFFFFF;
+}
+
+.container {
+  max-width: 1080px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.mc-header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: #FFFFFF;
+}
+
+.mc-logo {
+  display: block;
+}
+
+.mc-menu {
+  font-size: 15px;
+}
+
+.mc-menu a {
+  color: #405063;
+  border-bottom: 1px solid transparent;
+  transition: border 0.25s;
+}
+
+.mc-menu a:hover {
+  border-bottom-color: #405063;
+}
+
+.mc-button {
+  background-color: #489AFF;
+  border-radius: 22px;
+  border: 2px solid #489AFF;
+  display: block;
+  font-size: 14px;
+  height: 43px;
+  line-height: 39px;
+  text-align: center;
+  width: 144px;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.mc-button:link,
+.mc-button:visited,
+.mc-button:hover,
+.mc-button:active {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.mc-button:hover {
+  background-color: #FFFFFF;
+  color: #489AFF;
+}
+
+.mc-hello {
+  width: 100%;
+  height: 1920px;
+  background-color: honeydew;
+}
