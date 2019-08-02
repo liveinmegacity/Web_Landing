@@ -15,10 +15,7 @@ body {
 .mc-menu {
   font-size: 15px; }
 
-.navbar-light .navbar-nav .nav-link:link,
-.navbar-light .navbar-nav .nav-link:visited,
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link:active {
+.navbar-light .navbar-nav .nav-link:link, .navbar-light .navbar-nav .nav-link:visited, .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:active {
   color: #405063; }
 
 .mc-menu a {
@@ -41,10 +38,7 @@ body {
   max-width: 144px;
   transition: background-color 0.25s, color 0.25s; }
 
-.mc-button:link,
-.mc-button:visited,
-.mc-button:hover,
-.mc-button:active {
+.mc-button:link, .mc-button:visited, .mc-button:hover, .mc-button:active {
   color: #FFFFFF;
   text-decoration: none; }
 

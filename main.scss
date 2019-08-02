@@ -1,4 +1,6 @@
 $color-page: #FFFFFF;
+$color-text: #405063;
+$color-ui: #489AFF;
 
 body {
   font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -21,27 +23,30 @@ body {
   font-size: 15px;
 }
 
-.navbar-light .navbar-nav .nav-link:link,
-.navbar-light .navbar-nav .nav-link:visited,
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link:active {
-  color: #405063;
+.navbar-light .navbar-nav .nav-link {
+
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    color: $color-text;
+  }
 }
 
 .mc-menu a {
-  color: #405063;
+  color: $color-text;
   border-bottom: 1px solid transparent;
   transition: border 0.25s;
 }
 
 .mc-menu a:hover {
-  border-bottom-color: #405063;
+  border-bottom-color: $color-text;
 }
 
 .mc-button {
-  background-color: #489AFF;
+  background-color: $color-ui;
   border-radius: 22px;
-  border: 2px solid #489AFF;
+  border: 2px solid $color-ui;
   display: block;
   font-size: 14px;
   height: 43px;
@@ -51,17 +56,20 @@ body {
   transition: background-color 0.25s, color 0.25s;
 }
 
-.mc-button:link,
-.mc-button:visited,
-.mc-button:hover,
-.mc-button:active {
-  color: #FFFFFF;
-  text-decoration: none;
+.mc-button {
+
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    color: $color-page;
+    text-decoration: none;
+  }
 }
 
 .mc-button:hover {
-  background-color: #FFFFFF;
-  color: #489AFF;
+  background-color: $color-page;
+  color: $color-ui;
 }
 
 .mc-hello {
