@@ -2,6 +2,8 @@ $color-page: #FFFFFF;
 $color-text: #405063;
 $color-ui: #489AFF;
 
+$time-anim: 0.25s;
+
 body {
   font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
   background-color: $color-page;
@@ -36,7 +38,7 @@ body {
 .mc-menu a {
   color: $color-text;
   border-bottom: 1px solid transparent;
-  transition: border 0.25s;
+  transition: border $time-anim;
 }
 
 .mc-menu a:hover {
@@ -53,7 +55,7 @@ body {
   line-height: 39px;
   text-align: center;
   max-width: 144px;
-  transition: background-color 0.25s, color 0.25s;
+  transition: background-color $time-anim, color $time-anim;
 }
 
 .mc-button {
