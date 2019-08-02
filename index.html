@@ -17,22 +17,35 @@
   <div class="container">
     <div class="row align-items-center mc-header sticky-top">
 
-      <div class="col-3">
-        <a href="#"><img src="image/Logo_Text.svg" alt="Logo" class="mc-logo"></a>
-      </div>
+      <!-- <div class="col-12 col-md-9"> -->
+      <div class="col-12">
 
-      <div class="col-7">
-        <nav class="nav mc-menu justify-content-center">
-          <a class="nav-link" href="#">Это меню</a>
-          <a class="nav-link" href="#">Должно</a>
-          <a class="nav-link" href="#">Быть</a>
-          <a class="nav-link" href="#">Закрепленным</a>
-          <a class="nav-link" href="#">При скролле</a>
+        <nav class="navbar navbar-expand-md navbar-light bg-transparent px-0">
+          <a class="navbar-brand" href="#">
+            <img src="image/Logo.svg" alt="Logo" class="d-inline d-lg-none">
+            <img src="image/Logo_Text.svg" alt="Logo" class="d-none d-lg-inline">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#idMenu"
+            aria-controls="idMenu" aria-expanded="false" aria-label="Меню">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="idMenu">
+            <nav class="navbar-nav mc-menu justify-content-around flex-grow-1 mx-md-5">
+              <a class="nav-link text-center" href="#">Это меню</a>
+              <a class="nav-link text-center" href="#">Должно</a>
+              <a class="nav-link text-center" href="#">Быть</a>
+              <a class="nav-link text-center" href="#">Закрепленным</a>
+              <a class="nav-link text-center" href="#">При скролле</a>
+            </nav>
+          </div>
+
+          <div class="mc-break d-md-none"></div>
+
+          <a href="#" class="mc-button mx-auto my-2 flex-grow-1">МОДАЛКА</a>
         </nav>
-      </div>
 
-      <div class="col-2">
-        <a href="#" class="mc-button ml-auto">МОДАЛКА</a>
+
       </div>
 
     </div>
@@ -41,6 +54,10 @@
       <p class="mc-hello">Hello, World!</p>
     </div>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </body>
 

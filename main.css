@@ -10,18 +10,26 @@ body {
 }
 
 .mc-header {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 19px;
+  padding-bottom: 19px;
   background-color: #FFFFFF;
-}
-
-.mc-logo {
-  display: block;
 }
 
 .mc-menu {
   font-size: 15px;
 }
+
+.navbar-light .navbar-nav .nav-link:link,
+.navbar-light .navbar-nav .nav-link:visited,
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:active {
+  color: #405063;
+}
+
+/* .navbar-light .navbar-toggler-icon {
+  background-color: #405063;
+  color: #405063;
+} */
 
 .mc-menu a {
   color: #405063;
@@ -42,7 +50,7 @@ body {
   height: 43px;
   line-height: 39px;
   text-align: center;
-  width: 144px;
+  max-width: 144px;
   transition: background-color 0.25s, color 0.25s;
 }
 
@@ -63,4 +71,11 @@ body {
   width: 100%;
   height: 1920px;
   background-color: honeydew;
+}
+
+.mc-break {
+  flex-basis: 100%;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
 }
