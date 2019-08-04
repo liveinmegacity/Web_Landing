@@ -3,6 +3,7 @@
 /************************/
 /************************/
 body {
+  font: 30px;
   font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 15px;
   background-color: #FFFFFF;
@@ -20,9 +21,13 @@ body {
   background-color: #FFFFFF; }
 
 .mc-header-content {
-  max-width: 1080px;
+  max-width: 1050px;
   padding-top: 19px;
   padding-bottom: 19px; }
+
+.navbar {
+  padding-left: 0;
+  padding-right: 0; }
 
 .navbar-light .navbar-nav .nav-link:link, .navbar-light .navbar-nav .nav-link:visited, .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:active {
   color: #405063; }
@@ -46,6 +51,7 @@ body {
   line-height: 39px;
   text-align: center;
   max-width: 144px;
+  width: 144px;
   transition: background-color 0.25s, color 0.25s; }
 
 .mc-header-content__button:link, .mc-header-content__button:visited, .mc-header-content__button:hover, .mc-header-content__button:active {
@@ -59,25 +65,30 @@ body {
 .mc-vacancy {
   min-height: 480px;
   height: 100vh;
-  max-height: 1080px;
+  max-height: 1080px; }
+
+.mc-vacancy-content {
+  max-width: 1050px;
   background: url("image/Picture_People.svg") right 75px no-repeat; }
 
-@media (max-width: 767.98px) {
-  .mc-vacancy {
-    background-size: contain; } }
-
 .mc-vacancy__text {
-  background-color: #FFFFFFF0;
   border-radius: 5px; }
 
 .mc-footer {
   border-top: 1px solid #DBDBDB; }
 
 .mc-footer-content {
-  max-width: 1080px;
+  max-width: 1050px;
   font-size: 13px;
   padding-top: 19px;
   padding-bottom: 19px; }
 
 .color-blue {
   color: #489AFF; }
+
+.mc-h1 {
+  font: 400 36px Roboto, "Helvetica Neue", Arial, sans-serif; }
+
+.mc-text {
+  font: 300 15px Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 19px; }

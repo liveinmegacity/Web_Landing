@@ -1,5 +1,5 @@
 $width-container: 1440px;
-$width-content: 1080px;
+$width-content: 1050px;
 
 /************************/
 
@@ -14,6 +14,15 @@ $color-blue: #489AFF;
 
 /************************/
 
+$font-family: Roboto,
+"Helvetica Neue",
+Arial,
+sans-serif;
+$font-h1: 400 36px $font-family;
+$font-h2: 30px;
+$font-text: 300 15px $font-family;
+$font-description: 300 13px $font-family;
+
 $font-main: 15px;
 $font-ui: 14px;
 $font-footer: 13px;
@@ -25,7 +34,8 @@ $time-anim: 0.25s;
 /************************/
 
 body {
-  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+  font: $font-h2;
+  font-family: $font-family;
   font-size: $font-main;
   background-color: $color-page;
   color: $color-text;
@@ -50,6 +60,11 @@ body {
   max-width: $width-content;
   padding-top: 19px;
   padding-bottom: 19px;
+}
+
+.navbar {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -83,6 +98,7 @@ body {
   line-height: 39px;
   text-align: center;
   max-width: 144px;
+  width: 144px;
   transition: background-color $time-anim, color $time-anim;
 }
 
@@ -106,17 +122,21 @@ body {
   min-height: 480px;
   height: 100vh;
   max-height: 1080px;
+}
+
+.mc-vacancy-content {
+  max-width: $width-content;
   background: url("image/Picture_People.svg") right 75px no-repeat;
 }
 
-@media (max-width: 767.98px) {
-  .mc-vacancy {
-    background-size: contain;
-  }
-}
+// @media (max-width: 767.98px) {
+//   .mc-vacancy {
+//     background-size: contain;
+//   }
+// }
 
 .mc-vacancy__text {
-  background-color: #FFFFFFF0;
+  // background-color: #FFFFFFF0;
   border-radius: 5px;
 }
 
@@ -133,4 +153,13 @@ body {
 
 .color-blue {
   color: $color-blue;
+}
+
+.mc-h1 {
+  font: $font-h1;
+}
+
+.mc-text {
+  font: $font-text;
+  line-height: 19px;
 }

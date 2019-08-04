@@ -17,47 +17,50 @@
   <div class="container">
     <div class="row mc-header">
 
-      <div class="col mx-auto mc-header-content">
+      <div class="col">
+        <div class="row mx-auto mc-header-content align-items-center">
+          <div class="col-12 col-md-auto px-0 flex-fill">
+            <nav class="navbar navbar-expand-md navbar-light bg-transparent">
 
-        <nav class="navbar navbar-expand-md navbar-light bg-transparent px-0">
+              <a class="navbar-brand" href="#">
+                <img src="image/Logo.svg" alt="Logo" class="d-inline d-lg-none">
+                <img src="image/Logo_Text.svg" alt="Logo" class="d-none d-lg-inline">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#idMenu"
+                aria-controls="idMenu" aria-expanded="false" aria-label="Меню">
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-          <a class="navbar-brand" href="#">
-            <img src="image/Logo.svg" alt="Logo" class="d-inline d-lg-none">
-            <img src="image/Logo_Text.svg" alt="Logo" class="d-none d-lg-inline">
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#idMenu"
-            aria-controls="idMenu" aria-expanded="false" aria-label="Меню">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+              <div class="collapse navbar-collapse" id="idMenu">
+                <nav class="mc-menu navbar-nav justify-content-around flex-fill mx-md-4 mx-lg-5">
+                  <a class="nav-link text-center" href="#">Это меню</a>
+                  <a class="nav-link text-center" href="#">Должно</a>
+                  <a class="nav-link text-center" href="#">Быть</a>
+                  <a class="nav-link text-center" href="#">Закрепленным</a>
+                  <a class="nav-link text-center" href="#">При скролле</a>
+                </nav>
+              </div>
 
-          <div class="collapse navbar-collapse" id="idMenu">
-            <nav class="mc-menu navbar-nav justify-content-around flex-grow-1 mx-md-5">
-              <a class="nav-link text-center" href="#">Это меню</a>
-              <a class="nav-link text-center" href="#">Должно</a>
-              <a class="nav-link text-center" href="#">Быть</a>
-              <a class="nav-link text-center" href="#">Закрепленным</a>
-              <a class="nav-link text-center" href="#">При скролле</a>
             </nav>
+
           </div>
+          <div class="col-12 col-md-auto px-0">
+            <a href="#" class="mc-header-content__button mx-auto">МОДАЛКА</a>
 
-          <div class="w-100 d-md-none"></div>
-
-          <a href="#" class="mc-header-content__button mx-auto flex-grow-1">МОДАЛКА</a>
-        </nav>
+          </div>
+        </div>
 
       </div>
 
     </div>
 
-    <div class="row">
-      <div class="col m-auto">
-        <div class="mc-vacancy">
-
-          <div class="mc-vacancy__text">
+    <div class="row mc-vacancy">
+      <div class="col">
+        <div class="row mx-auto mc-vacancy-content">
+          <div class="col-12 col-md-5 px-0">
             <img src="image/Icon_Hand.png" alt="Hand">
-            <h1>Привет!</h1>
-            <h1 class="display-4">Привет!</h1>
-            <p>Группа компаний Freematiq и MITRA ищет себе клевого верстальщика. На постоянную работу в офисе или
+            <h1 class="mc-h1">Привет!</h1>
+            <p class="mc-text">Группа компаний Freematiq и MITRA ищет себе клевого верстальщика. На постоянную работу в офисе или
               периодическую работу по удаленке. Хотим предложить тебе вместо скучных тестовых заданий – сверстать эту
               страницу.</p>
             <p>В своей работе мы используем:</p>
@@ -71,7 +74,6 @@
             </ul>
             <p>Не ограничиваем этими технологиями, верстай как удобно.</p>
           </div>
-
         </div>
       </div>
     </div>
