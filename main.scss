@@ -1,28 +1,55 @@
+$width-container: 1440px;
+$width-content: 1080px;
+
+/************************/
+
 $color-page: #FFFFFF;
-$color-text: #405063;
-$color-ui: #489AFF;
+$color-header: #405063;
+$color-text: #818D9C;
+$color-hardline: #C3D0DF;
+$color-softline: #E3E8EF;
+$color-line: #DBDBDB;
+$color-gradientfun: linear-gradient(to right, #9570EE, #FF4F72, #FFC359);
+$color-blue: #489AFF;
+
+/************************/
+
+$font-main: 15px;
+$font-ui: 14px;
+$font-footer: 13px;
+
+/************************/
 
 $time-anim: 0.25s;
 
+/************************/
+
 body {
   font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: $font-main;
   background-color: $color-page;
+  color: $color-text;
 }
 
 .container {
-  max-width: 1080px;
-  padding-left: 18px;
-  padding-right: 18px;
+  max-width: $width-container;
+  background: url("image/Picture_Splash.svg") right top no-repeat;
+}
+
+@media (max-width: 767.98px) {
+  .container {
+    background-size: cover;
+  }
 }
 
 .mc-header {
-  padding-top: 19px;
-  padding-bottom: 19px;
   background-color: $color-page;
 }
 
-.mc-menu {
-  font-size: 15px;
+.mc-header-content {
+  max-width: $width-content;
+  padding-top: 19px;
+  padding-bottom: 19px;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -31,26 +58,27 @@ body {
   &:visited,
   &:hover,
   &:active {
-    color: $color-text;
+    color: $color-header;
   }
 }
 
 .mc-menu a {
-  color: $color-text;
+  color: $color-header;
   border-bottom: 1px solid transparent;
   transition: border $time-anim;
 }
 
 .mc-menu a:hover {
-  border-bottom-color: $color-text;
+  border-bottom-color: $color-header;
 }
 
-.mc-button {
-  background-color: $color-ui;
+.mc-header-content__button {
+  background-color: $color-blue;
   border-radius: 22px;
-  border: 2px solid $color-ui;
+  border: 2px solid $color-blue;
   display: block;
-  font-size: 14px;
+  font-size: $font-ui;
+  font-weight: 500;
   height: 43px;
   line-height: 39px;
   text-align: center;
@@ -58,7 +86,7 @@ body {
   transition: background-color $time-anim, color $time-anim;
 }
 
-.mc-button {
+.mc-header-content__button {
 
   &:link,
   &:visited,
@@ -69,20 +97,40 @@ body {
   }
 }
 
-.mc-button:hover {
+.mc-header-content__button:hover {
   background-color: $color-page;
-  color: $color-ui;
+  color: $color-blue;
 }
 
-.mc-hello {
-  width: 100%;
-  height: 1920px;
-  background-color: honeydew;
+.mc-vacancy {
+  min-height: 480px;
+  height: 100vh;
+  max-height: 1080px;
+  background: url("image/Picture_People.svg") right 75px no-repeat;
 }
 
-.mc-break {
-  flex-basis: 100%;
-  width: 0px;
-  height: 0px;
-  overflow: hidden;
+@media (max-width: 767.98px) {
+  .mc-vacancy {
+    background-size: contain;
+  }
+}
+
+.mc-vacancy__text {
+  background-color: #FFFFFFF0;
+  border-radius: 5px;
+}
+
+.mc-footer {
+  border-top: 1px solid $color-line;
+}
+
+.mc-footer-content {
+  max-width: $width-content;
+  font-size: $font-footer;
+  padding-top: 19px;
+  padding-bottom: 19px;
+}
+
+.color-blue {
+  color: $color-blue;
 }
