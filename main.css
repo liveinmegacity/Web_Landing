@@ -63,7 +63,7 @@ body {
   color: #489AFF; }
 
 .mc-vacancy {
-  min-height: 100vh; }
+  overflow: hidden; }
 
 .mc-vacancy-content {
   max-width: 1050px;

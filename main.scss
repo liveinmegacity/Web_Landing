@@ -120,9 +120,7 @@ body {
 }
 
 .mc-vacancy {
-  // min-height: 480px;
-  min-height: 100vh;
-  // max-height: 1080px;
+  overflow: hidden;
 }
 
 .mc-vacancy-content {
@@ -199,6 +197,6 @@ body {
   margin-left: -1em;
 }
 
-.mc-link{
+.mc-link {
   color: $color-blue;
 }
