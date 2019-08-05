@@ -127,3 +127,27 @@ body {
 
 .mc-link {
   color: #489AFF; }
+
+.mc-task {
+  max-width: 870px;
+  border-top: 1px solid #E3E8EF;
+  border-bottom: 1px solid #E3E8EF;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-bottom: 25px; }
+
+.mc-task__first {
+  font: 300 15px Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 19px;
+  color: #818D9C;
+  padding: 27px 0; }
+
+.mc-task__item {
+  min-height: 75px; }
+
+.mc-task__text {
+  font: 300 14px Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #405063;
+  line-height: 16px;
+  margin-top: 10px;
+  display: block; }

@@ -200,3 +200,31 @@ body {
 .mc-link {
   color: $color-blue;
 }
+
+.mc-task {
+  max-width: 870px;
+  border-top: 1px solid $color-softline;
+  border-bottom: 1px solid $color-softline;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-bottom: 25px;
+}
+
+.mc-task__first {
+  font: $font-text;
+  line-height: 19px;
+  color: $color-text;
+  padding: 27px 0;
+}
+
+.mc-task__item {
+  min-height: 75px;
+}
+
+.mc-task__text {
+  font: $font-list;
+  color: $color-header;
+  line-height: 16px;
+  margin-top: 10px;
+  display: block;
+}
