@@ -63,16 +63,23 @@ body {
   color: #489AFF; }
 
 .mc-vacancy {
-  min-height: 480px;
-  height: 100vh;
-  max-height: 1080px; }
+  min-height: 100vh; }
 
 .mc-vacancy-content {
   max-width: 1050px;
-  background: url("image/Picture_People.svg") right 75px no-repeat; }
+  background: url("image/Picture_People.svg") right center no-repeat;
+  padding-top: 44px;
+  padding-bottom: 44px; }
 
-.mc-vacancy__text {
-  border-radius: 5px; }
+@media (max-width: 575.98px) {
+  .mc-vacancy-content {
+    background-size: contain; } }
+
+@media (max-width: 991.98px) {
+  .mc-vacancy-text {
+    background-color: #FFFFFFF0;
+    border-radius: 5px;
+    padding: 15px; } }
 
 .mc-footer {
   border-top: 1px solid #DBDBDB; }
@@ -87,8 +94,33 @@ body {
   color: #489AFF; }
 
 .mc-h1 {
-  font: 400 36px Roboto, "Helvetica Neue", Arial, sans-serif; }
+  font: 400 36px Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin-top: 11px;
+  margin-bottom: 11px; }
+
+.mc-color-header {
+  color: #405063; }
+
+.mc-main {
+  margin-bottom: 0; }
 
 .mc-text {
   font: 300 15px Roboto, "Helvetica Neue", Arial, sans-serif;
-  line-height: 19px; }
+  line-height: 19px;
+  color: #818D9C;
+  margin-bottom: 19px; }
+
+.mc-list {
+  font: 300 14px Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 26px;
+  list-style: none;
+  margin-top: 4px;
+  padding-left: 16px; }
+
+.mc-list li::before {
+  content: "\2022";
+  color: #489AFF;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em; }
