@@ -124,3 +124,6 @@ body {
   display: inline-block;
   width: 1em;
   margin-left: -1em; }
+
+.mc-link {
+  color: #489AFF; }
