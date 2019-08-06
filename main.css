@@ -40,27 +40,37 @@ body {
 .mc-menu a:hover {
   border-bottom-color: #405063; }
 
-.mc-header-content__button {
+.mc-header-content__button,
+.mc-process-content__button {
   background-color: #489AFF;
   border-radius: 22px;
   border: 2px solid #489AFF;
-  display: block;
   font-size: 14px;
   font-weight: 500;
   height: 43px;
   line-height: 39px;
   text-align: center;
+  transition: background-color 0.25s, color 0.25s; }
+  .mc-header-content__button:link, .mc-header-content__button:visited, .mc-header-content__button:hover, .mc-header-content__button:active,
+  .mc-process-content__button:link,
+  .mc-process-content__button:visited,
+  .mc-process-content__button:hover,
+  .mc-process-content__button:active {
+    color: #FFFFFF;
+    text-decoration: none; }
+  .mc-header-content__button:hover,
+  .mc-process-content__button:hover {
+    background-color: #FFFFFF;
+    color: #489AFF; }
+
+.mc-header-content__button {
   max-width: 144px;
   width: 144px;
-  transition: background-color 0.25s, color 0.25s; }
+  display: block; }
 
-.mc-header-content__button:link, .mc-header-content__button:visited, .mc-header-content__button:hover, .mc-header-content__button:active {
-  color: #FFFFFF;
-  text-decoration: none; }
-
-.mc-header-content__button:hover {
-  background-color: #FFFFFF;
-  color: #489AFF; }
+.mc-process-content__button {
+  display: inline;
+  padding: 11px 28px; }
 
 .mc-vacancy {
   overflow: hidden; }
@@ -77,7 +87,7 @@ body {
 
 @media (max-width: 991.98px) {
   .mc-vacancy-text {
-    background-color: #FFFFFFF0;
+    background-color: #FFFFFFD0;
     border-radius: 5px;
     padding: 15px; } }
 
@@ -151,3 +161,21 @@ body {
   line-height: 16px;
   margin-top: 10px;
   display: block; }
+
+.mc-process {
+  margin-top: 95px;
+  margin-bottom: 95px; }
+
+.mc-process-content {
+  max-width: 1050px;
+  background: url("image/Picture_Code.png") 62px center no-repeat;
+  min-height: 279px; }
+  @media (max-width: 575.98px) {
+    .mc-process-content {
+      background-position-x: center; } }
+
+@media (max-width: 991.98px) {
+  .mc-process-text {
+    background-color: #FFFFFFD0;
+    border-radius: 5px;
+    padding: 15px; } }

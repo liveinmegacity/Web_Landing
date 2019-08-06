@@ -3,14 +3,15 @@ $width-content: 1050px;
 
 /************************/
 
-$color-page: #FFFFFF;
-$color-header: #405063;
-$color-text: #818D9C;
-$color-hardline: #C3D0DF;
-$color-softline: #E3E8EF;
-$color-line: #DBDBDB;
-$color-gradientfun: linear-gradient(to right, #9570EE, #FF4F72, #FFC359);
+$color-background: #FFFFFFD0;
 $color-blue: #489AFF;
+$color-gradientfun: linear-gradient(to right, #9570EE, #FF4F72, #FFC359);
+$color-hardline: #C3D0DF;
+$color-header: #405063;
+$color-line: #DBDBDB;
+$color-page: #FFFFFF;
+$color-softline: #E3E8EF;
+$color-text: #818D9C;
 
 /************************/
 
@@ -88,22 +89,18 @@ body {
   border-bottom-color: $color-header;
 }
 
-.mc-header-content__button {
+.mc-header-content__button,
+.mc-process-content__button {
   background-color: $color-blue;
   border-radius: 22px;
   border: 2px solid $color-blue;
-  display: block;
+  // display: block;
   font-size: $font-ui;
   font-weight: 500;
   height: 43px;
   line-height: 39px;
   text-align: center;
-  max-width: 144px;
-  width: 144px;
   transition: background-color $time-anim, color $time-anim;
-}
-
-.mc-header-content__button {
 
   &:link,
   &:visited,
@@ -112,11 +109,24 @@ body {
     color: $color-page;
     text-decoration: none;
   }
+
+  &:hover {
+    background-color: $color-page;
+    color: $color-blue;
+  }
 }
 
-.mc-header-content__button:hover {
-  background-color: $color-page;
-  color: $color-blue;
+.mc-header-content__button {
+  max-width: 144px;
+  width: 144px;
+  display: block;
+}
+
+.mc-process-content__button {
+  // max-width: none;
+  // width: auto;
+  display: inline;
+  padding: 11px 28px;
 }
 
 .mc-vacancy {
@@ -138,7 +148,7 @@ body {
 
 @media (max-width: 991.98px) {
   .mc-vacancy-text {
-    background-color: #FFFFFFF0;
+    background-color: $color-background;
     border-radius: 5px;
     padding: 15px;
   }
@@ -227,4 +237,27 @@ body {
   line-height: 16px;
   margin-top: 10px;
   display: block;
+}
+
+.mc-process {
+  margin-top: 95px;
+  margin-bottom: 95px;
+}
+
+.mc-process-content {
+  max-width: $width-content;
+  background: url("image/Picture_Code.png") 62px center no-repeat;
+  min-height: 279px;
+
+  @media (max-width: 575.98px) {
+    background-position-x: center;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .mc-process-text {
+    background-color: $color-background;
+    border-radius: 5px;
+    padding: 15px;
+  }
 }
