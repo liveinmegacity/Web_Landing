@@ -7,19 +7,19 @@ $color-background: #FFFFFFD0;
 
 $color-blue: #489AFF;
 $color-blue-darken: darken(rgba($color-blue, 1), 25%);
-$color-gradientfun: linear-gradient(to right, #9570EE, #FF4F72, #FFC359);
 $color-hardline: #C3D0DF;
 $color-header: #405063;
 $color-line: #DBDBDB;
 $color-white: #FFFFFF;
-$color-progress: #B2BBC8;
 $color-softline: #E3E8EF;
-$color-text-alternative: #C4CCD6;
 $color-text: #818D9C;
+$color-text-alternative: #C4CCD6;
 
+$color-progress: #B2BBC8;
 $color-progress-background: #283C54;
 $color-progress-purple: #C78FF9;
 $color-progress-orange: #FFC35A;
+$color-progress-gradientfun: linear-gradient(to right, #9570EE, #FF4F72, #FFC359);
 
 /************************/
 
@@ -38,64 +38,41 @@ body {
   background-color: $color-white;
 }
 
-// .container {
-// max-width: $width-container;
-// background: url("image/Picture_Splash.svg") right top no-repeat;
-// }
+.container {
+  // max-width: $width-container;
+  background: url("image/Picture_Splash.svg") right top no-repeat;
+}
 
-// @media (max-width: 767.98px) {
-// .container {
-// background-size: cover;
-// }
-// }
-
-.mc-header {
+.mc-background-header {
   background-color: $color-white;
 }
 
-.mc-header-content {
+.mc-header {
   max-width: $width-content;
   padding-top: 19px;
   padding-bottom: 19px;
 }
 
-.navbar {
-  padding-left: 0;
-  padding-right: 0;
-}
+.mc-menu {
 
-.navbar-light .navbar-nav .nav-link {
+  &__item {
+    border-bottom: 1px solid transparent;
+    color: $color-header !important;
+    font: 400 15px / 19px $font-family;
+    transition: border $time-anim;
 
-  &:link,
-  &:visited,
-  &:hover,
-  &:active {
-    color: $color-header;
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      color: $color-header;
+    }
+
+    &:hover {
+      border-bottom-color: $color-header;
+    }
   }
 }
-
-.mc-menu a {
-  color: $color-header;
-  border-bottom: 1px solid transparent;
-  transition: border $time-anim;
-}
-
-.mc-menu a:hover {
-  border-bottom-color: $color-header;
-}
-
-.mc-skills {
-  max-width: $width-content;
-  background: #354A62;
-  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-}
-
-/************************/
-/************************/
-/************************/
-/************************/
-/************************/
 
 @mixin mc-background($image-url, $x-align, $min-height) {
   background: $image-url center center no-repeat;
@@ -200,4 +177,11 @@ body {
     font: 300 14px / 16px $font-family;
     color: $color-header;
   }
+}
+
+.mc-skills {
+  max-width: $width-content;
+  background: #354A62;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }

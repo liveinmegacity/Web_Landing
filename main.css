@@ -5,40 +5,27 @@
 body {
   background-color: #FFFFFF; }
 
-.mc-header {
+.container {
+  background: url("image/Picture_Splash.svg") right top no-repeat; }
+
+.mc-background-header {
   background-color: #FFFFFF; }
 
-.mc-header-content {
+.mc-header {
   max-width: 1050px;
   padding-top: 19px;
   padding-bottom: 19px; }
 
-.navbar {
-  padding-left: 0;
-  padding-right: 0; }
-
-.navbar-light .navbar-nav .nav-link:link, .navbar-light .navbar-nav .nav-link:visited, .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:active {
-  color: #405063; }
-
-.mc-menu a {
-  color: #405063;
+.mc-menu__item {
   border-bottom: 1px solid transparent;
+  color: #405063 !important;
+  font: 400 15px/19px Roboto, "Helvetica Neue", Arial, sans-serif;
   transition: border 0.25s; }
+  .mc-menu__item:link, .mc-menu__item:visited, .mc-menu__item:hover, .mc-menu__item:active {
+    color: #405063; }
+  .mc-menu__item:hover {
+    border-bottom-color: #405063; }
 
-.mc-menu a:hover {
-  border-bottom-color: #405063; }
-
-.mc-skills {
-  max-width: 1050px;
-  background: #354A62;
-  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 8px; }
-
-/************************/
-/************************/
-/************************/
-/************************/
-/************************/
 .mc-background-vacancy {
   background: url("image/Picture_People.svg") center center no-repeat;
   min-height: 382px; }
@@ -111,3 +98,9 @@ body {
 .mc-description__paragraph {
   font: 300 14px/16px Roboto, "Helvetica Neue", Arial, sans-serif;
   color: #405063; }
+
+.mc-skills {
+  max-width: 1050px;
+  background: #354A62;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; }
