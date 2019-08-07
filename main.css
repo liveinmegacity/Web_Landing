@@ -3,11 +3,7 @@
 /************************/
 /************************/
 body {
-  font: 30px;
-  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 15px;
-  background-color: #FFFFFF;
-  color: #818D9C; }
+  background-color: #FFFFFF; }
 
 .mc-header {
   background-color: #FFFFFF; }
@@ -31,42 +27,6 @@ body {
 
 .mc-menu a:hover {
   border-bottom-color: #405063; }
-
-.mc-footer {
-  border-top: 1px solid #DBDBDB; }
-
-.mc-footer-content {
-  max-width: 1050px;
-  font-size: 13px;
-  padding-top: 19px;
-  padding-bottom: 19px; }
-
-.mc-link {
-  color: #489AFF; }
-
-.mc-task {
-  max-width: 870px;
-  border-top: 1px solid #E3E8EF;
-  border-bottom: 1px solid #E3E8EF;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding-bottom: 25px; }
-
-.mc-task__first {
-  font: 300 15px Roboto, "Helvetica Neue", Arial, sans-serif;
-  line-height: 19px;
-  color: #818D9C;
-  padding: 27px 0; }
-
-.mc-task__item {
-  min-height: 75px; }
-
-.mc-task__text {
-  font: 300 14px Roboto, "Helvetica Neue", Arial, sans-serif;
-  color: #405063;
-  line-height: 16px;
-  margin-top: 10px;
-  display: block; }
 
 .mc-skills {
   max-width: 1050px;
@@ -93,24 +53,27 @@ body {
     .mc-background-process {
       background: url("image/Picture_Code.png") left center no-repeat; } }
 
-/************************/
 .mc-info {
   background-color: #FFFFFFD0;
   border-radius: 5px;
   padding: 15px; }
+  .mc-info_task {
+    max-width: 870px;
+    border-radius: 0;
+    border-top: 1px solid #E3E8EF;
+    border-bottom: 1px solid #E3E8EF;
+    padding-bottom: 25px; }
   .mc-info__header {
     color: #405063;
     font: 400 36px Roboto, "Helvetica Neue", Arial, sans-serif; }
   .mc-info__paragraph {
     color: #818D9C;
-    font: 300 15px Roboto, "Helvetica Neue", Arial, sans-serif;
-    line-height: 19px; }
+    font: 300 15px/19px Roboto, "Helvetica Neue", Arial, sans-serif; }
   .mc-info__paragraph_strong {
     color: #405063;
     font-weight: 400; }
   .mc-info__list {
-    font: 300 14px Roboto, "Helvetica Neue", Arial, sans-serif;
-    line-height: 26px;
+    font: 300 14px/26px Roboto, "Helvetica Neue", Arial, sans-serif;
     list-style: none;
     padding-left: 16px;
     color: #405063; }
@@ -122,7 +85,6 @@ body {
       width: 1em;
       margin-left: -1em; }
 
-/************************/
 .mc-button {
   background-color: #489AFF;
   border-radius: 22px;
@@ -135,3 +97,17 @@ body {
     text-decoration: none; }
   .mc-button:hover {
     background-color: #0059c8; }
+
+.mc-footer {
+  border-top: 1px solid #DBDBDB;
+  color: #818D9C;
+  font: 400 13px/19px Roboto, "Helvetica Neue", Arial, sans-serif;
+  padding-bottom: 19px;
+  padding-top: 19px; }
+
+.mc-link {
+  color: #489AFF; }
+
+.mc-description__paragraph {
+  font: 300 14px/16px Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #405063; }

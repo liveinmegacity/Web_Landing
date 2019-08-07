@@ -11,7 +11,7 @@ $color-gradientfun: linear-gradient(to right, #9570EE, #FF4F72, #FFC359);
 $color-hardline: #C3D0DF;
 $color-header: #405063;
 $color-line: #DBDBDB;
-$color-page: #FFFFFF;
+$color-white: #FFFFFF;
 $color-progress: #B2BBC8;
 $color-softline: #E3E8EF;
 $color-text-alternative: #C4CCD6;
@@ -27,12 +27,6 @@ $font-family: Roboto,
 "Helvetica Neue",
 Arial,
 sans-serif;
-$font-h2: 30px;
-$font-text: 300 15px $font-family;
-$font-list: 300 14px $font-family;
-
-$font-main: 15px;
-$font-footer: 13px;
 
 /************************/
 
@@ -41,11 +35,7 @@ $time-anim: 0.25s;
 /************************/
 
 body {
-  font: $font-h2;
-  font-family: $font-family;
-  font-size: $font-main;
-  background-color: $color-page;
-  color: $color-text;
+  background-color: $color-white;
 }
 
 // .container {
@@ -60,7 +50,7 @@ body {
 // }
 
 .mc-header {
-  background-color: $color-page;
+  background-color: $color-white;
 }
 
 .mc-header-content {
@@ -94,49 +84,6 @@ body {
   border-bottom-color: $color-header;
 }
 
-.mc-footer {
-  border-top: 1px solid $color-line;
-}
-
-.mc-footer-content {
-  max-width: $width-content;
-  font-size: $font-footer;
-  padding-top: 19px;
-  padding-bottom: 19px;
-}
-
-.mc-link {
-  color: $color-blue;
-}
-
-.mc-task {
-  max-width: 870px;
-  border-top: 1px solid $color-softline;
-  border-bottom: 1px solid $color-softline;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding-bottom: 25px;
-}
-
-.mc-task__first {
-  font: $font-text;
-  line-height: 19px;
-  color: $color-text;
-  padding: 27px 0;
-}
-
-.mc-task__item {
-  min-height: 75px;
-}
-
-.mc-task__text {
-  font: $font-list;
-  color: $color-header;
-  line-height: 16px;
-  margin-top: 10px;
-  display: block;
-}
-
 .mc-skills {
   max-width: $width-content;
   background: #354A62;
@@ -167,12 +114,20 @@ body {
   @include mc-background(url("image/Picture_Code.png"), left, 279px);
 }
 
-/************************/
-
 .mc-info {
   background-color: $color-background;
   border-radius: 5px;
   padding: 15px;
+
+  &_task {
+    max-width: 870px;
+    border-radius: 0;
+    border-top: 1px solid $color-softline;
+    border-bottom: 1px solid $color-softline;
+    // margin-top: 50px;
+    // margin-bottom: 50px;
+    padding-bottom: 25px;
+  }
 
   &__header {
     color: $color-header;
@@ -181,8 +136,7 @@ body {
 
   &__paragraph {
     color: $color-text;
-    font: 300 15px $font-family;
-    line-height: 19px;
+    font: 300 15px / 19px $font-family;
   }
 
   &__paragraph_strong {
@@ -191,8 +145,7 @@ body {
   }
 
   &__list {
-    font: 300 14px $font-family;
-    line-height: 26px;
+    font: 300 14px / 26px $font-family;
     list-style: none;
     padding-left: 16px;
     color: $color-header;
@@ -208,8 +161,6 @@ body {
   }
 }
 
-/************************/
-
 .mc-button {
   background-color: $color-blue;
   border-radius: 22px;
@@ -222,7 +173,7 @@ body {
   &:visited,
   &:hover,
   &:active {
-    color: $color-page;
+    color: $color-white;
     text-decoration: none;
   }
 
@@ -231,4 +182,22 @@ body {
   }
 }
 
-// .mc-description {}
+.mc-footer {
+  border-top: 1px solid $color-line;
+  color: $color-text;
+  font: 400 13px / 19px $font-family;
+  padding-bottom: 19px;
+  padding-top: 19px;
+}
+
+.mc-link {
+  color: $color-blue;
+}
+
+.mc-description {
+
+  &__paragraph {
+    font: 300 14px / 16px $font-family;
+    color: $color-header;
+  }
+}
