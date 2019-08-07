@@ -4,14 +4,22 @@ $width-content: 1050px;
 /************************/
 
 $color-background: #FFFFFFD0;
+
 $color-blue: #489AFF;
+$color-blue-darken: darken(rgba($color-blue, 1), 25%);
 $color-gradientfun: linear-gradient(to right, #9570EE, #FF4F72, #FFC359);
 $color-hardline: #C3D0DF;
 $color-header: #405063;
 $color-line: #DBDBDB;
 $color-page: #FFFFFF;
+$color-progress: #B2BBC8;
 $color-softline: #E3E8EF;
+$color-text-alternative: #C4CCD6;
 $color-text: #818D9C;
+
+$color-progress-background: #283C54;
+$color-progress-purple: #C78FF9;
+$color-progress-orange: #FFC35A;
 
 /************************/
 
@@ -19,14 +27,11 @@ $font-family: Roboto,
 "Helvetica Neue",
 Arial,
 sans-serif;
-$font-h1: 400 36px $font-family;
 $font-h2: 30px;
 $font-text: 300 15px $font-family;
 $font-list: 300 14px $font-family;
-$font-description: 300 13px $font-family;
 
 $font-main: 15px;
-$font-ui: 14px;
 $font-footer: 13px;
 
 /************************/
@@ -43,16 +48,16 @@ body {
   color: $color-text;
 }
 
-.container {
-  max-width: $width-container;
-  background: url("image/Picture_Splash.svg") right top no-repeat;
-}
+// .container {
+// max-width: $width-container;
+// background: url("image/Picture_Splash.svg") right top no-repeat;
+// }
 
-@media (max-width: 767.98px) {
-  .container {
-    background-size: cover;
-  }
-}
+// @media (max-width: 767.98px) {
+// .container {
+// background-size: cover;
+// }
+// }
 
 .mc-header {
   background-color: $color-page;
@@ -89,71 +94,6 @@ body {
   border-bottom-color: $color-header;
 }
 
-.mc-header-content__button,
-.mc-process-content__button {
-  background-color: $color-blue;
-  border-radius: 22px;
-  border: 2px solid $color-blue;
-  // display: block;
-  font-size: $font-ui;
-  font-weight: 500;
-  height: 43px;
-  line-height: 39px;
-  text-align: center;
-  transition: background-color $time-anim, color $time-anim;
-
-  &:link,
-  &:visited,
-  &:hover,
-  &:active {
-    color: $color-page;
-    text-decoration: none;
-  }
-
-  &:hover {
-    background-color: $color-page;
-    color: $color-blue;
-  }
-}
-
-.mc-header-content__button {
-  max-width: 144px;
-  width: 144px;
-  display: block;
-}
-
-.mc-process-content__button {
-  // max-width: none;
-  // width: auto;
-  display: inline;
-  padding: 11px 28px;
-}
-
-.mc-vacancy {
-  overflow: hidden;
-}
-
-.mc-vacancy-content {
-  max-width: $width-content;
-  background: url("image/Picture_People.svg") right center no-repeat;
-  padding-top: 44px;
-  padding-bottom: 44px;
-}
-
-@media (max-width: 575.98px) {
-  .mc-vacancy-content {
-    background-size: contain;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .mc-vacancy-text {
-    background-color: $color-background;
-    border-radius: 5px;
-    padding: 15px;
-  }
-}
-
 .mc-footer {
   border-top: 1px solid $color-line;
 }
@@ -163,48 +103,6 @@ body {
   font-size: $font-footer;
   padding-top: 19px;
   padding-bottom: 19px;
-}
-
-.color-blue {
-  color: $color-blue;
-}
-
-.mc-h1 {
-  font: $font-h1;
-  margin-top: 11px;
-  margin-bottom: 11px;
-}
-
-.mc-color-header {
-  color: $color-header;
-}
-
-.mc-main {
-  margin-bottom: 0;
-}
-
-.mc-text {
-  font: $font-text;
-  line-height: 19px;
-  color: $color-text;
-  margin-bottom: 19px;
-}
-
-.mc-list {
-  font: $font-list;
-  line-height: 26px;
-  list-style: none;
-  margin-top: 4px;
-  padding-left: 16px;
-}
-
-.mc-list li::before {
-  content: "\2022";
-  color: $color-blue;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
 }
 
 .mc-link {
@@ -239,25 +137,98 @@ body {
   display: block;
 }
 
-.mc-process {
-  margin-top: 95px;
-  margin-bottom: 95px;
-}
-
-.mc-process-content {
+.mc-skills {
   max-width: $width-content;
-  background: url("image/Picture_Code.png") 62px center no-repeat;
-  min-height: 279px;
+  background: #354A62;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
 
-  @media (max-width: 575.98px) {
-    background-position-x: center;
+/************************/
+/************************/
+/************************/
+/************************/
+/************************/
+
+@mixin mc-background($image-url, $x-align, $min-height) {
+  background: $image-url center center no-repeat;
+  min-height: $min-height;
+
+  @media (min-width: 768px) {
+    background: $image-url $x-align center no-repeat;
   }
 }
 
-@media (max-width: 991.98px) {
-  .mc-process-text {
-    background-color: $color-background;
-    border-radius: 5px;
-    padding: 15px;
+.mc-background-vacancy {
+  @include mc-background(url("image/Picture_People.svg"), right, 382px);
+}
+
+.mc-background-process {
+  @include mc-background(url("image/Picture_Code.png"), left, 279px);
+}
+
+/************************/
+
+.mc-info {
+  background-color: $color-background;
+  border-radius: 5px;
+  padding: 15px;
+
+  &__header {
+    color: $color-header;
+    font: 400 36px $font-family;
+  }
+
+  &__paragraph {
+    color: $color-text;
+    font: 300 15px $font-family;
+    line-height: 19px;
+  }
+
+  &__paragraph_strong {
+    color: $color-header;
+    font-weight: 400;
+  }
+
+  &__list {
+    font: 300 14px $font-family;
+    line-height: 26px;
+    list-style: none;
+    padding-left: 16px;
+    color: $color-header;
+
+    & li::before {
+      content: "\2022";
+      color: $color-blue;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
   }
 }
+
+/************************/
+
+.mc-button {
+  background-color: $color-blue;
+  border-radius: 22px;
+  font: 500 14px $font-family;
+  padding: 13px 30px;
+  text-transform: uppercase;
+  transition: background-color $time-anim, color $time-anim;
+
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    color: $color-page;
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: $color-blue-darken;
+  }
+}
+
+// .mc-description {}

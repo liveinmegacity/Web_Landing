@@ -6,7 +6,9 @@
     {
       "type": "gulp",
       "task": "default",
-      "problemMatcher": []
+      "problemMatcher": [
+        "$node-sass"
+      ]
     }
   ],
   // "tasks": [
