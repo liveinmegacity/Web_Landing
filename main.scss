@@ -39,7 +39,7 @@ body {
 }
 
 .container {
-  // max-width: $width-container;
+  max-width: $width-container;
   background: url("image/Picture_Splash.svg") right top no-repeat;
 }
 
@@ -75,6 +75,7 @@ body {
 }
 
 @mixin mc-background($image-url, $x-align, $min-height) {
+  max-width: $width-content;
   background: $image-url center center no-repeat;
   min-height: $min-height;
 
@@ -160,6 +161,7 @@ body {
 }
 
 .mc-footer {
+  max-width: $width-content;
   border-top: 1px solid $color-line;
   color: $color-text;
   font: 400 13px / 19px $font-family;
@@ -179,7 +181,7 @@ body {
   }
 }
 
-.mc-skills {
+.mc-background-skills {
   max-width: $width-content;
   background: #354A62;
   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
