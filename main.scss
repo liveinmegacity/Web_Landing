@@ -52,12 +52,7 @@ body {
   padding-bottom: 19px;
 }
 
-// button.navbar-toggler {
-//   outline: none;
-// }
-
 .mc-menu {
-
   &__item {
     border-bottom: 1px solid transparent;
     color: $color-header !important;
@@ -105,8 +100,6 @@ body {
     border-radius: 0;
     border-top: 1px solid $color-softline;
     border-bottom: 1px solid $color-softline;
-    // margin-top: 50px;
-    // margin-bottom: 50px;
     padding-bottom: 25px;
   }
 
@@ -152,8 +145,7 @@ body {
 
 .mc-button {
   background-color: $color-blue;
-  // border-radius: 22px;
-  border-radius: 50rem !important;
+  border-radius: 21.5px;
   font: 500 14px $font-family;
   padding: 13px 30px;
   text-transform: uppercase;
@@ -186,7 +178,6 @@ body {
 }
 
 .mc-description {
-
   &__paragraph {
     font: 300 14px / 16px $font-family;
     color: $color-header;
@@ -204,33 +195,21 @@ body {
 
 
 
-.mc-back {
-  background-color: #23364C;
-  background-image: linear-gradient(to right, red, yellow);
-  background-size: 25% 100%;
-  background-repeat: no-repeat;
-
-  border-left: 25px solid transparent;
-  padding-left: 25px;
-  background-clip: padding-box;
-
-  border-radius: 10%;
-  height: 60px;
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
 .mb-slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
   &__range {
     -webkit-appearance: none;
     appearance: none;
     background: #23364C linear-gradient(to right, #9570EE, #FF4F72, #FFC359) no-repeat;
     background-size: 75%;
-    border-radius: 10px;
+    border-radius: 3px;
     height: 6px;
     outline: none;
     width: 100%;
+    // flex-basis: 100%;
 
     &::-webkit-slider-thumb {
       -webkit-appearance: none;
@@ -242,5 +221,39 @@ body {
       height: 16px;
       width: 16px;
     }
+  }
+
+  &__rangepoint {
+    font: 300 15px / 19px $font-family;
+    color: $color-white;
+    margin-top: 10px;
+  }
+
+  &__rangepoint::before {
+    opacity: 0.5;
+    background-color: $color-white;
+    border-radius: 1.5px;
+    content: "";
+    display: block;
+    height: 3px;
+    width: 3px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__rangepoint_active {
+    font-weight: 400;
+  }
+
+  &__rangepoint_active::before {
+    opacity: 1;
+  }
+
+  &__rangepoint:first-of-type::before {
+    margin-left: 0;
+  }
+
+  &__rangepoint:last-of-type::before {
+    margin-right: 0;
   }
 }

@@ -8,11 +8,12 @@ $(document).ready(function () {
 
   /************************/
 
-  var range = $('#idRange');
-
-  range.on('input', function () {
+  $('#idRange').on('input', function (event) {
+    var range = $(event.currentTarget);
     var w = (parseInt(range.val(), 10) - 1) * 25;
     range.css('background-size', w.toString() + '%');
   });
+
+  $('#idRange').trigger('input');
 
 })
