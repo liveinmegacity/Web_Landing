@@ -53,7 +53,7 @@
       </div>
     </div>
 
-    <div class="row mx-auto align-items-center no-gutters mc-background-vacancy" id="idVacancy">
+    <div class="d-none row mx-auto align-items-center no-gutters mc-background-vacancy" id="idVacancy">
       <div class="col-12 col-md-6">
         <div class="mc-info">
           <p><img src="image/Icon_Hand.png" alt="Hand"></p>
@@ -76,7 +76,7 @@
       </div>
     </div>
 
-    <div class="row mx-auto justify-content-center align-items-end no-gutters mc-info mc-info_task">
+    <div class="d-none row mx-auto justify-content-center align-items-end no-gutters mc-info mc-info_task">
       <div class="col-11 col-md-9 text-center mc-info__paragraph">
         Это твое первое задание в нашей компании. Если оно покажется тебе интересным и его реализация нам понравится –
         добро пожаловать в команду.
@@ -92,7 +92,7 @@
       </div>
     </div>
 
-    <div class="row mx-auto justify-content-md-end align-items-center no-gutters mc-background-process">
+    <div class="d-none row mx-auto justify-content-md-end align-items-center no-gutters mc-background-process">
       <div class="col-12 col-md-6">
         <div class="mc-info">
           <p><img src="image/Icon_Rocket.png" alt="Rocket"></p>
@@ -107,7 +107,13 @@
 
     <div class="row mx-auto mc-background-skills">
       <div class="col-8">
-        Оцени себя
+        <div class="bg-transparent rounded-0 mc-info">
+          <p><img src="image/Icon_Stars.png" alt="Stars"></p>
+          <h1 class="text-white mc-info__header mc-info__header_less">Оцени себя</h1>
+          <p class="mc-info__paragraph mc-info__paragraph_alternative">Попробуй максимально объективно и честно оценить
+            свои знания верстки по
+            следующей шкале. И да, её тоже нужно сверстать.</p>
+        </div>
       </div>
       <div class="col-2">
         12
@@ -115,8 +121,13 @@
       <div class="col-2">
         269
       </div>
-      <div class="col-12">
-        Intern
+      <div class="col-12 mb-4">
+
+        <div class="mb-slider">
+          <input type="range" min="1" max="5" value="4" class="mb-slider__range" id="idRange">
+          <p>Value: <span id="demo"></span></p>
+        </div>
+
       </div>
     </div>
 
