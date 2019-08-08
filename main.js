@@ -8,12 +8,18 @@ $(document).ready(function () {
 
   /************************/
 
-  $('#idRange').on('input', function (event) {
+  $('#idRange > input[type="range"]').on('input', function (event) {
     var range = $(event.currentTarget);
-    var w = (parseInt(range.val(), 10) - 1) * 25;
+    var value = parseInt(range.val(), 10);
+    var w = (value - 1) * 25;
     range.css('background-size', w.toString() + '%');
+
+    $('#idRange > .mb-slider__rangepoint')
+      .removeClass('mb-slider__rangepoint_active');
+    $('#idRange > .mb-slider__rangepoint:nth-child(' + (value + 1) + ')')
+      .addClass('mb-slider__rangepoint_active');
   });
 
-  $('#idRange').trigger('input');
+  $('#idRange > input[type="range"]').trigger('input');
 
 })
