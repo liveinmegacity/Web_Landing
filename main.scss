@@ -224,6 +224,12 @@ body {
       height: $h;
     }
 
+    &::-moz-range-thumb {
+      box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+      border: none;
+    }
+
     &[value="1"]::-webkit-slider-thumb {
       margin-left: -$w/2 + 1;
     }
