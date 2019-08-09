@@ -196,6 +196,9 @@ body {
 
 
 .mb-slider {
+  $w: 16px;
+  $h: 16px;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -218,8 +221,16 @@ body {
       border-radius: 50%;
       box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);
       cursor: pointer;
-      height: 16px;
-      width: 16px;
+      width: $w;
+      height: $h;
+    }
+
+    &[value="1"]::-webkit-slider-thumb {
+      margin-left: -$w/2 + 1;
+    }
+
+    &[value="5"]::-webkit-slider-thumb {
+      margin-left: $w/2 - 1;
     }
   }
 
@@ -227,6 +238,18 @@ body {
     font: 300 15px / 19px $font-family;
     color: $color-white;
     margin-top: 10px;
+  }
+
+  &__rangepoint:nth-of-type(2) {
+    margin-left: -5px;
+  }
+
+  &__rangepoint:nth-of-type(3) {
+    margin-left: 3px;
+  }
+
+  &__rangepoint:nth-of-type(4) {
+    margin-left: 4px;
   }
 
   &__rangepoint::before {

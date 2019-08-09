@@ -12,7 +12,9 @@ $(document).ready(function () {
     var range = $(event.currentTarget);
     var value = parseInt(range.val(), 10);
     var w = (value - 1) * 25;
+
     range.css('background-size', w.toString() + '%');
+    range.attr('value', value);
 
     $('#idRange > .mb-slider__rangepoint')
       .removeClass('mb-slider__rangepoint_active');
