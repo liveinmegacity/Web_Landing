@@ -1,0 +1,38 @@
+<svg class="mc-indicator" id="idIndicator" width="120" height="120" viewBox="0 0 120 120" version="1.1" 
+  xmlns="http://www.w3.org/2000/svg">
+
+  <style>
+    <![CDATA[
+      .mc-indicator__background {
+        fill: none;
+        stroke-width: 4;
+        stroke: #283C54;
+      }
+
+      .mc-indicator__segment {
+        fill: none;
+        stroke-linecap: round;
+        stroke-width: 4;
+      }
+
+      .mc-indicator__title {
+        fill: #FFFFFF;
+        font: 400 30px Roboto, sans-serif;
+        text-anchor: middle;
+      }
+
+      .mc-indicator__description {
+        fill: #B2BBC8;
+        font: 300 13px Roboto, sans-serif;
+        text-anchor: middle;
+      }
+    ]]>
+  </style>
+
+  <circle cx="60" cy="60" r="58" class="mc-indicator__background" />
+  <path d="m 2,60 a 58,58 0 1,0 60,-58" class="mc-indicator__segment" />
+
+  <text x="60" y="65" class="mc-indicator__title"></text>
+  <text x="60" y="85" class="mc-indicator__description"></text>
+
+</svg>

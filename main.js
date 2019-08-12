@@ -16,12 +16,28 @@ $(document).ready(function () {
     range.css('background-size', w.toString() + '%');
     range.attr('value', value);
 
-    $('#idRange > .mb-slider__rangepoint')
-      .removeClass('mb-slider__rangepoint_active');
-    $('#idRange > .mb-slider__rangepoint:nth-child(' + (value + 1) + ')')
-      .addClass('mb-slider__rangepoint_active');
+    $('#idRange > .mb-slider__rangepoint').removeClass('mb-slider__rangepoint_active');
+    $('#idRange > .mb-slider__rangepoint:nth-child(' + (value + 1) + ')').addClass('mb-slider__rangepoint_active');
   });
 
   $('#idRange > input[type="range"]').trigger('input');
 
-})
+});
+
+/************************/
+
+$(window).on('load', function () {
+
+  jQuery.each($('.mc-indicator-container'), function (_index, element) {
+    var indicator = element.contentDocument;
+
+    var title = indicator.getElementsByClassName('mc-indicator__title').item(0);
+    var description = indicator.getElementsByClassName('mc-indicator__description').item(0);
+    var segment = indicator.getElementsByClassName('mc-indicator__segment').item(0);
+
+    $(title).html($(element).attr('data-title'));
+    $(description).html($(element).attr('data-description'));
+    $(segment).attr("stroke", $(element).attr('data-color'));
+  });
+
+});
