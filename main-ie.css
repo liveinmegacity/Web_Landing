@@ -1,0 +1,31 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  input[type="range"] {
+    background: transparent;
+    border-radius: 20px;
+    margin: 0;
+    padding: 0;
+    height: 20px;
+  }
+  input[type="range"]::-ms-track {
+    border: none;
+    color: transparent;
+  }
+  input[type="range"]::-ms-fill-lower {
+    background: #23364C linear-gradient(to right, #9570EE, #FF4F72, #FFC359) no-repeat;
+    height: 20px;
+  }
+  input[type="range"]::-ms-fill-upper {
+    background: #FFFFFF;
+    height: 20px;
+  }
+  input[type="range"]::-ms-thumb {
+    background: #FFFFFF;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+  }
+}
+/*# sourceMappingURL=main-ie.css.map */
