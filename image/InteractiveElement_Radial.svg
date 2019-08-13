@@ -30,7 +30,7 @@
   </style>
 
   <circle cx="60" cy="60" r="58" class="mc-indicator__background" />
-  <path d="m 2,60 a 58,58 0 1,0 60,-58" class="mc-indicator__segment" />
+  <path d="m 60,2 a 58,58 0 1,1 -58,60" class="mc-indicator__segment" />
 
   <text x="60" y="65" class="mc-indicator__title"></text>
   <text x="60" y="85" class="mc-indicator__description"></text>
