@@ -375,9 +375,90 @@ p {
 }
 
 .mc-indicator-container {
-  width: 100%;
-  max-width: 120px;
   height: auto;
+  max-width: 120px;
   padding: 15px 0;
+  width: 100%;
+}
+
+.mc-plan {
+  border-radius: 5px;
+  border: 1px solid #D7E1EC;
+  max-width: 1050px;
+  overflow-x: auto;
+  margin-top: 95px;
+  margin-bottom: 95px;
+}
+
+.mc-table {
+  border-radius: 5px;
+  color: #405063;
+  font: 400 15px/19px Roboto, "Helvetica Neue", Arial, sans-serif;
+  min-width: 768px;
+  width: 100%;
+}
+
+.mc-table th,
+.mc-table td {
+  border: 1px solid #E3E8EF;
+  padding: 17px 19px 14px;
+}
+
+.mc-table thead tr:first-of-type th {
+  border-top: none;
+}
+
+.mc-table tbody tr:last-of-type td {
+  border-bottom: none;
+}
+
+.mc-table thead tr th:first-of-type,
+.mc-table tbody tr td:first-of-type {
+  border-left: none;
+}
+
+.mc-table thead tr th:last-of-type,
+.mc-table tbody tr td:last-of-type {
+  border-right: none;
+}
+
+.mc-table thead tr th:not(:nth-child(1)),
+.mc-table tbody tr td:not(:nth-child(1)) {
+  text-align: center;
+  width: 23%;
+}
+
+.mc-table thead tr th:not(:nth-child(1)) {
+  vertical-align: bottom;
+}
+
+.mc-table thead tr th:nth-child(2),
+.mc-table tbody tr td:nth-child(2) {
+  background: #F2F8FF;
+}
+
+.mc-table thead tr th:nth-child(3),
+.mc-table tbody tr td:nth-child(3) {
+  background: #F7F4FF;
+}
+
+.mc-table thead tr th:nth-child(4),
+.mc-table tbody tr td:nth-child(4) {
+  background: #FFF1F8;
+}
+
+.mc-hardline {
+  color: #C3D0DF;
+}
+
+.mc-planinfo__header {
+  color: #405063;
+  font: 400 20px/28px Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin-bottom: 6px;
+}
+
+.mc-planinfo__text {
+  color: #818D9C;
+  font: 300 13px/16px Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 /*# sourceMappingURL=main.css.map */
