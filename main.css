@@ -488,4 +488,10 @@ p {
   color: #489AFF;
   font: 400 22px Roboto, "Helvetica Neue", Arial, sans-serif;
 }
+
+.mc-background-goods {
+  background: url("image/Picture_Goods.png") left center no-repeat;
+  margin-top: 21px;
+  min-height: 504px;
+}
 /*# sourceMappingURL=main.css.map */
