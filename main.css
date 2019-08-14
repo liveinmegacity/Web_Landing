@@ -160,10 +160,11 @@ p {
 }
 
 .mc-footer {
-  max-width: 1050px;
   border-top: 1px solid #DBDBDB;
   color: #818D9C;
   font: 400 13px/19px Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin-top: 153px;
+  max-width: 1050px;
   padding-bottom: 19px;
   padding-top: 19px;
 }
@@ -386,8 +387,8 @@ p {
   border: 1px solid #D7E1EC;
   max-width: 1050px;
   overflow-x: auto;
-  margin-top: 95px;
-  margin-bottom: 95px;
+  margin-top: 13px;
+  margin-bottom: 84px;
 }
 
 .mc-table {
@@ -460,5 +461,31 @@ p {
 .mc-planinfo__text {
   color: #818D9C;
   font: 300 13px/16px Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.mc-banner {
+  margin-top: 90px;
+  max-width: 617px;
+}
+
+.mc-banner__logo {
+  margin-bottom: 13px;
+}
+
+.mc-banner__header {
+  color: #405063;
+  font: 400 30px Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin-bottom: 13px;
+}
+
+.mc-banner__text {
+  color: #818D9C;
+  font: 300 15px/19px Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin-bottom: 12px;
+}
+
+.mc-banner__link {
+  color: #489AFF;
+  font: 400 22px Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 /*# sourceMappingURL=main.css.map */

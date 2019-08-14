@@ -190,10 +190,11 @@ p {
 }
 
 .mc-footer {
-  max-width: $width-content;
   border-top: 1px solid $color-line;
   color: $color-text;
   font: 400 13px / 19px $font-family;
+  margin-top: 153px;
+  max-width: $width-content;
   padding-bottom: 19px;
   padding-top: 19px;
 }
@@ -373,8 +374,8 @@ p {
   border: 1px solid #D7E1EC;
   max-width: $width-content;
   overflow-x: auto;
-  margin-top: 95px;
-  margin-bottom: 95px;
+  margin-top: 13px;
+  margin-bottom: 84px;
 }
 
 .mc-table {
@@ -449,5 +450,31 @@ p {
   &__text {
     color: $color-text;
     font: 300 13px / 16px $font-family;
+  }
+}
+
+.mc-banner {
+  margin-top: 90px;
+  max-width: 617px;
+
+  &__logo {
+    margin-bottom: 13px;
+  }
+
+  &__header {
+    color: $color-header;
+    font: 400 30px $font-family;
+    margin-bottom: 13px;
+  }
+
+  &__text {
+    color: $color-text;
+    font: 300 15px / 19px $font-family;
+    margin-bottom: 12px;
+  }
+
+  &__link {
+    color: $color-blue;
+    font: 400 22px $font-family;
   }
 }
