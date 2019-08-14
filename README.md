@@ -20,6 +20,13 @@
 - Firefox 68
 - IE 10, IE 11
 
+## Средства разработки
+
+- HTML
+- SCSS
+- Bootstrap
+- JavaScript
+
 ## Известные проблемы
 
 1. Не работает SVG-текст в IE.
