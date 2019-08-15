@@ -494,4 +494,134 @@ p {
   margin-top: 21px;
   min-height: 504px;
 }
+
+.mc-goodscard {
+  background: #FFFFFF;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+  height: 398px;
+  overflow: hidden;
+  position: relative;
+  width: 240px;
+}
+
+.mc-goodscard__like {
+  cursor: pointer;
+  position: absolute;
+  right: 12px;
+  top: 11px;
+}
+
+.mc-goodscard__addtocard {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.mc-goods-description__image {
+  line-height: 152px;
+  min-height: 152px;
+  text-align: center;
+}
+
+.mc-goods-description__image img {
+  vertical-align: bottom;
+}
+
+.mc-goods-description__header {
+  border-left: 3px solid #51BCF8;
+  color: #405063;
+  font: 400 20px Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 33px;
+  margin-bottom: 7px;
+  margin-top: 28px;
+  min-height: 33px;
+  padding-left: 17px;
+}
+
+.mc-goods-description__text {
+  color: #818D9C;
+  font: 300 13px/17px Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.mc-goods-price {
+  color: #405063;
+  font: 400 20px Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin-left: 18px;
+  margin-top: 25px;
+}
+
+.mc-goods-price__oldprice {
+  color: #818D9C;
+  font: 300 14px Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin-left: 14px;
+  text-decoration: line-through;
+}
+
+.mc-goods-color {
+  color: #405063;
+  font: 400 15px Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin-left: 19px;
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mc-goods-color__caption {
+  margin-right: 7px;
+}
+
+.mc-goods-color__item {
+  border-radius: 50%;
+  display: inline-block;
+  height: 12px;
+  position: relative;
+  width: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.mc-goods-color__item.mc-active::before {
+  border-radius: 50%;
+  border: 1px solid #CDCDCD;
+  content: "";
+  display: block;
+  height: 24px;
+  left: -50%;
+  position: absolute;
+  top: -50%;
+  width: 24px;
+}
+
+.mc-bg-red {
+  background-color: #D45D5E;
+}
+
+.mc-bg-darkblue {
+  background-color: #518DD5;
+}
+
+.mc-bg-orange {
+  background-color: #E98D4B;
+}
+
+.mc-bg-violet {
+  background-color: #9F548C;
+}
+
+.mc-bg-almostblack {
+  background-color: #292929;
+}
+
+.mc-bg-grey {
+  background-color: #97938F;
+}
 /*# sourceMappingURL=main.css.map */

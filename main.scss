@@ -8,6 +8,14 @@ $color-background: rgba(255, 255, 255, 0.8);
 
 $color-blue: #489AFF;
 $color-blue-darken: darken(rgba($color-blue, 1), 25%);
+
+$color-red: #D45D5E;
+$color-darkblue: #518DD5;
+$color-orange: #E98D4B;
+$color-violet: #9F548C;
+$color-almostblack: #292929;
+$color-grey: #97938F;
+
 $color-hardline: #C3D0DF;
 $color-header: #405063;
 $color-line: #DBDBDB;
@@ -483,4 +491,137 @@ p {
   background: url("image/Picture_Goods.png") left center no-repeat;
   margin-top: 21px;
   min-height: 504px;
+}
+
+.mc-goodscard {
+  background: $color-white;
+  border-radius: 10px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+  height: 398px;
+  overflow: hidden;
+  position: relative;
+  width: 240px;
+
+  &__like {
+    cursor: pointer;
+    position: absolute;
+    right: 12px;
+    top: 11px;
+  }
+
+  &__addtocard {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.mc-goods-description {
+
+  &__image {
+    $height: 152px;
+
+    line-height: $height;
+    min-height: $height;
+    text-align: center;
+
+    & img {
+      vertical-align: bottom;
+    }
+  }
+
+  &__header {
+    $height: 33px;
+
+    border-left: 3px solid #51BCF8;
+    color: $color-header;
+    font: 400 20px $font-family;
+    line-height: $height;
+    margin-bottom: 7px;
+    margin-top: 28px;
+    min-height: $height;
+    padding-left: 17px;
+  }
+
+  &__text {
+    color: $color-text;
+    font: 300 13px / 17px $font-family;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.mc-goods-price {
+  color: $color-header;
+  font: 400 20px $font-family;
+  margin-left: 18px;
+  margin-top: 25px;
+
+  &__oldprice {
+    color: $color-text;
+    font: 300 14px $font-family;
+    margin-left: 14px;
+    text-decoration: line-through;
+  }
+}
+
+.mc-goods-color {
+  color: $color-header;
+  font: 400 15px $font-family;
+  margin-left: 19px;
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+
+  &__caption {
+    margin-right: 7px;
+  }
+
+  &__item {
+    border-radius: 50%;
+    display: inline-block;
+    height: 12px;
+    position: relative;
+    width: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    &.mc-active::before {
+      border-radius: 50%;
+      border: 1px solid #CDCDCD;
+      content: "";
+      display: block;
+      height: 24px;
+      left: -50%;
+      position: absolute;
+      top: -50%;
+      width: 24px;
+    }
+  }
+
+}
+
+.mc-bg-red {
+  background-color: $color-red;
+}
+
+.mc-bg-darkblue {
+  background-color: $color-darkblue;
+}
+
+.mc-bg-orange {
+  background-color: $color-orange;
+}
+
+.mc-bg-violet {
+  background-color: $color-violet;
+}
+
+.mc-bg-almostblack {
+  background-color: $color-almostblack;
+}
+
+.mc-bg-grey {
+  background-color: $color-grey;
 }
