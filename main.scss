@@ -630,19 +630,39 @@ p {
 }
 
 .mc-goodsnavigation {
+  align-items: center;
   display: flex;
   flex-direction: column;
+  margin-left: 224px;
+  margin-right: 46px;
+  margin-top: 126px;
 
   &__next,
   &__prev {
     $height: 62px;
 
-    border: 2px solid rgba(255, 255, 255, 0.35);
     border-radius: 50%;
-    width: $height;
+    border: 2px solid rgba(255, 255, 255, 0.35);
     height: $height;
-    text-align: center;
     line-height: 56px;
+    text-align: center;
+    width: $height;
+  }
+
+  &__prev {
+    margin-top: 21px;
+  }
+
+  &__page {
+    color: $color-white;
+    font: 400 72px $font-family;
+    margin-top: 106px;
+  }
+
+  &__pagecount {
+    color: #47678B;
+    font: 400 42px $font-family;
+    margin-left: 10px;
   }
 }
 
