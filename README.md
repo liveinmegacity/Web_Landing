@@ -25,7 +25,9 @@
 - HTML
 - SCSS
 - Bootstrap
+- BEM (БЭМ)
 - JavaScript
+- npm
 
 ## Известные проблемы
 
