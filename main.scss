@@ -496,6 +496,8 @@ p {
   margin-right: -15px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .mc-goodscard {
@@ -634,11 +636,14 @@ p {
 .mc-goodsnavigation {
   align-items: center;
   display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
 
   @media (min-width: 768px) {
     margin-left: 46px;
     margin-right: 46px;
     margin-top: 126px;
+    margin-top: 111px;
   }
 
   @media (min-width: 992px) {
