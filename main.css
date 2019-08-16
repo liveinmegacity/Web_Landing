@@ -496,6 +496,8 @@ p {
   overflow: hidden;
   margin-left: -15px;
   margin-right: -15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .mc-goodscard {
@@ -636,37 +638,62 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-left: 224px;
-  margin-right: 46px;
-  margin-top: 126px;
+}
+
+@media (min-width: 768px) {
+  .mc-goodsnavigation {
+    margin-left: 46px;
+    margin-right: 46px;
+    margin-top: 126px;
+  }
+}
+
+@media (min-width: 992px) {
+  .mc-goodsnavigation {
+    margin-left: 224px;
+  }
 }
 
 .mc-goodsnavigation__next, .mc-goodsnavigation__prev {
   border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.35);
-  height: 62px;
-  line-height: 56px;
   text-align: center;
-  width: 62px;
+  height: 42px;
+  line-height: 36px;
+  width: 42px;
 }
 
-.mc-goodsnavigation__prev {
-  margin-top: 21px;
+@media (min-width: 768px) {
+  .mc-goodsnavigation__next, .mc-goodsnavigation__prev {
+    height: 62px;
+    line-height: 56px;
+    width: 62px;
+  }
+}
+
+@media (min-width: 768px) {
+  .mc-goodsnavigation__prev {
+    margin-top: 21px;
+  }
 }
 
 .mc-goodsnavigation__page {
   color: #FFFFFF;
-  font: 400 72px Roboto, "Helvetica Neue", Arial, sans-serif;
-  margin-top: 106px;
+  font: 400 42px Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .mc-goodsnavigation__page {
+    font: 400 72px Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin-top: 106px;
+  }
 }
 
 .mc-goodsnavigation__pagecount {
   color: #47678B;
   font: 400 42px Roboto, "Helvetica Neue", Arial, sans-serif;
+  font: 400 0.5833em Roboto, "Helvetica Neue", Arial, sans-serif;
   margin-left: 10px;
 }
 
@@ -674,6 +701,13 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-width: 290px;
   overflow-x: scroll;
+}
+
+@media (min-width: 768px) {
+  .mc-goodsslider {
+    min-width: auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */
