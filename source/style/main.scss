@@ -42,7 +42,6 @@ $time-anim: 0.25s;
 
 /************************/
 
-
 body {
   background-color: $color-white;
 }
@@ -52,7 +51,7 @@ p {
 }
 
 .container {
-  background: url("image/Picture_Splash.svg") right top no-repeat;
+  background: url("./../image/Picture_Splash.svg") right top no-repeat;
 
   @media (min-width: 1200px) {
     max-width: $width-container;
@@ -100,11 +99,11 @@ p {
 }
 
 .mc-background-vacancy {
-  @include mc-background(url("image/Picture_People.svg"), right, 382px);
+  @include mc-background(url("./../image/Picture_People.svg"), right, 382px);
 }
 
 .mc-background-process {
-  @include mc-background(url("image/Picture_Code.png"), left, 279px);
+  @include mc-background(url("./../image/Picture_Code.png"), left, 279px);
   margin-top: 95px;
   margin-bottom: 95px;
 }
@@ -489,7 +488,7 @@ p {
 }
 
 .mc-background-goods {
-  background: url("image/Picture_Goods.png") left center no-repeat;
+  background: url("./../image/Picture_Goods.png") left center no-repeat;
   margin-top: 21px;
   min-height: 504px;
   overflow: hidden;

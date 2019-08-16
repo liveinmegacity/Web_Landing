@@ -3,12 +3,19 @@
   "version": "1.0.0",
   "description": "Landing Page",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "mkdirp": "^0.5.1"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:style": "node-sass --watch source/style/ --output build/style/",
-    "build:style": "node-sass source/style --output build/style"
+    "watch:style": "node-sass --watch source/style --output build/style",
+    "build:mkdir": "mkdirp build",
+    "build:image": "cp -r source/image build",
+    "build:script": "cp -r source/script build",
+    "build:style": "node-sass source/style --output build/style",
+    "build:markup": "cp source/*.html build",
+    "build": "npm run build:mkdir && npm run build:image && npm run build:script && npm run build:style && npm run build:markup"
   },
   "repository": {
     "type": "git",

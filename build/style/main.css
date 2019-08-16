@@ -9,7 +9,7 @@ p {
   margin-bottom: 0.5rem; }
 
 .container {
-  background: url("image/Picture_Splash.svg") right top no-repeat; }
+  background: url("./../image/Picture_Splash.svg") right top no-repeat; }
   @media (min-width: 1200px) {
     .container {
       max-width: 1440px; } }
@@ -34,21 +34,21 @@ p {
 
 .mc-background-vacancy {
   max-width: 1050px;
-  background: url("image/Picture_People.svg") center center no-repeat;
+  background: url("./../image/Picture_People.svg") center center no-repeat;
   min-height: 382px; }
   @media (min-width: 768px) {
     .mc-background-vacancy {
-      background: url("image/Picture_People.svg") right center no-repeat; } }
+      background: url("./../image/Picture_People.svg") right center no-repeat; } }
 
 .mc-background-process {
   max-width: 1050px;
-  background: url("image/Picture_Code.png") center center no-repeat;
+  background: url("./../image/Picture_Code.png") center center no-repeat;
   min-height: 279px;
   margin-top: 95px;
   margin-bottom: 95px; }
   @media (min-width: 768px) {
     .mc-background-process {
-      background: url("image/Picture_Code.png") left center no-repeat; } }
+      background: url("./../image/Picture_Code.png") left center no-repeat; } }
 
 .mc-info {
   background-color: rgba(255, 255, 255, 0.8);
@@ -322,7 +322,7 @@ p {
     font: 400 22px Roboto, "Helvetica Neue", Arial, sans-serif; }
 
 .mc-background-goods {
-  background: url("image/Picture_Goods.png") left center no-repeat;
+  background: url("./../image/Picture_Goods.png") left center no-repeat;
   margin-top: 21px;
   min-height: 504px;
   overflow: hidden;
