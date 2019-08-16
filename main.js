@@ -38,7 +38,7 @@ $(window).on('load', function () {
     $(title).html($(element).attr('data-title'));
     $(description).html($(element).attr('data-description'));
     $(segment).attr('stroke', $(element).attr('data-color'));
-    $(segment).attr('d', describeArc(60, 60, 58, 0, 270));
+    $(segment).attr('d', describeArc(60, 60, 58, 0, $(element).attr('data-angle')));
 
   });
 
