@@ -3,14 +3,12 @@
   "version": "1.0.0",
   "description": "Landing Page",
   "main": "gulpfile.js",
-  "dependencies": {
-    "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2",
-    "jquery": "^3.4.1"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:style": "node-sass --watch source/style/ --output build/style/",
+    "build:style": "node-sass source/style --output build/style"
   },
   "repository": {
     "type": "git",
