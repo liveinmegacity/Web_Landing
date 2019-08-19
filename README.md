@@ -26,8 +26,8 @@
 
 ## Средства разработки
 
-- HTML
-- SCSS
+- HTML, Pug
+- CSS, Sass
 - Bootstrap
 - BEM (БЭМ)
 - JavaScript
