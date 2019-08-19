@@ -1,32 +1,11 @@
 doctype html
 head
-  meta(charset="UTF-8")
-  meta(name="viewport" content="width=device-width, initial-scale=1.0")
-  meta(http-equiv="X-UA-Compatible" content="ie=edge")
+  include markup/head.pug
   title Landing
-  link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
-  link(rel="stylesheet" href="style/main.css")
-  link(rel="stylesheet" href="style/main-ie.css")
+
 .container
-  #idHeader.row.sticky-top.mc-background-header
-    .col
-      .row.mx-auto.justify-content-center.align-items-center.mc-header
-        .col-12.col-md-auto.flex-fill
-          nav.navbar.navbar-expand-md.navbar-light.bg-transparent.px-0
-            a.navbar-brand(href="#")
-              img.d-inline.d-lg-none(src="image/Logo.svg" alt="Logo" width="60" height="60")
-              img.d-none.d-lg-inline(src="image/Logo_Text.svg" alt="Logo" width="219" height="60")
-            button.navbar-toggler(type="button" data-toggle="collapse" data-target="#idMenu" aria-controls="idMenu" aria-expanded="false" aria-label="Меню")
-              span.navbar-toggler-icon
-            #idMenu.collapse.navbar-collapse
-              nav.navbar-nav.justify-content-around.flex-fill.mc-menu
-                a.nav-link.text-center.mc-menu__item(href="#") Это меню
-                a.nav-link.text-center.mc-menu__item(href="#") Должно
-                a.nav-link.text-center.mc-menu__item(href="#") Быть
-                a.nav-link.text-center.mc-menu__item(href="#") Закрепленным
-                a.nav-link.text-center.mc-menu__item(href="#") При скролле
-        .col-auto.col-md-auto
-          a.mc-button(href="#") МОДАЛКА
+  include markup/header.pug
+
   #idVacancy.row.mx-auto.align-items-center.no-gutters.mc-background-vacancy
     .col-12.col-md-6
       .mc-info
@@ -246,12 +225,7 @@ head
           | нашу почту, указав тему письма “Тестовое задание для верстальщиков”.
         p
           a.mc-banner__link(href="mailto:hr@freematiq.com" target="_blank") hr@freematiq.com
-  .row.mx-auto.mc-footer
-    .col-12.col-md-8 © 2019, Project N1 - Special for you, Все права защищены
-    .col-12.col-md-4.text-md-right
-      | Сделано во 
-      a.mc-link(target="_blank" href="https://freematiq.com/") Freematiq
-script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js")
-script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js")
-script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js")
-script(src="script/main.js")
+
+  include markup/footer.pug
+
+include markup/script.pug

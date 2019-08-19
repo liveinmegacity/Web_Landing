@@ -1,0 +1,19 @@
+#idHeader.row.sticky-top.mc-background-header
+  .col
+    .row.mx-auto.justify-content-center.align-items-center.mc-header
+      .col-12.col-md-auto.flex-fill
+        nav.navbar.navbar-expand-md.navbar-light.bg-transparent.px-0
+          a.navbar-brand(href="#")
+            img.d-inline.d-lg-none(src="image/Logo.svg" alt="Logo" width="60" height="60")
+            img.d-none.d-lg-inline(src="image/Logo_Text.svg" alt="Logo" width="219" height="60")
+          button.navbar-toggler(type="button" data-toggle="collapse" data-target="#idMenu" aria-controls="idMenu" aria-expanded="false" aria-label="Меню")
+            span.navbar-toggler-icon
+          #idMenu.collapse.navbar-collapse
+            nav.navbar-nav.justify-content-around.flex-fill.mc-menu
+              a.nav-link.text-center.mc-menu__item(href="#") Это меню
+              a.nav-link.text-center.mc-menu__item(href="#") Должно
+              a.nav-link.text-center.mc-menu__item(href="#") Быть
+              a.nav-link.text-center.mc-menu__item(href="#") Закрепленным
+              a.nav-link.text-center.mc-menu__item(href="#") При скролле
+      .col-auto.col-md-auto
+        a.mc-button(href="#") МОДАЛКА
