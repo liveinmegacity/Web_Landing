@@ -10,7 +10,7 @@
 
 ## Исходные данные
 
-Макет для верстки находится [здесь](https://www.figma.com/file/wD6yhyBna9FqCSZzUQqM8T/Landing?node-id=0%3A1).
+Макет для верстки находится [здесь](https://clck.ru/FCiK5).
 
 ## Запуск
 
